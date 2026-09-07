@@ -102,3 +102,27 @@ p{letter-spacing:normal;text-wrap:pretty}
 .detail-grid figcaption{background:linear-gradient(transparent,rgba(0,0,0,.75));bottom:0;color:white;font-size:11px;font-weight:700;left:0;letter-spacing:.08em;padding:64px 18px 18px;position:absolute;right:0}
 .legal span{float:right}
 @media(max-width:700px){.hero .lead{font-size:16px}.detail-grid{grid-template-columns:1fr;grid-template-rows:repeat(3,220px)}.detail-grid figure img{height:100%;top:0;width:300%}.detail-grid figure:nth-child(1) img{left:0}.detail-grid figure:nth-child(2) img{left:-100%}.detail-grid figure:nth-child(3) img{left:-200%}.legal span{display:block;float:none;margin-top:8px}}
+
+/* v0.7.1 — art direction, tonal harmony and editorial voice */
+:root{--clay:#a6533f;--sage:#a8ad91;--paper:#f0ebe3}
+.wordmark-inline{color:var(--clay);font-family:var(--jakarta);font-size:.92em;font-weight:800;letter-spacing:-.055em;text-transform:lowercase;white-space:nowrap}
+.story-lead .wordmark-inline{display:inline-block}
+.making-copy{background:linear-gradient(145deg,#b2b79b 0%,var(--sage) 58%,#9da387 100%)}
+.making-copy>.eyebrow{color:#343529}
+.making-copy>p:not(.eyebrow){max-width:54ch}
+.making-copy ol{border:0;display:grid;gap:12px}
+.making-copy li{background:rgba(251,248,243,.36);border:1px solid rgba(26,26,26,.13);border-radius:4px;display:block;padding:25px 27px;transition:background .25s,transform .25s}
+.making-copy li:hover{background:rgba(251,248,243,.55);transform:translateX(5px)}
+.making-copy li b{font-family:var(--jakarta);font-size:clamp(19px,1.5vw,24px);letter-spacing:-.025em;line-height:1.25}
+.making-copy li p{color:#34352f;font-size:14px;line-height:1.6;margin:9px 0 0;max-width:46ch}
+.signature h2 .wordmark-inline{font-size:.94em}
+.testing{background:linear-gradient(180deg,var(--cream),#f4efe7)}
+.testing-intro>p:not(.eyebrow){max-width:68ch}
+.testing-steps article{position:relative}
+.testing-steps article:before{background:var(--clay);content:"";display:block;height:3px;margin-bottom:26px;width:38px}
+.testing-steps h3{font-size:clamp(22px,2vw,28px)}
+.values article{display:flex;flex-direction:column}
+.value-image{aspect-ratio:4/3;overflow:hidden}
+.value-image img{height:100%;object-fit:cover;transition:transform .55s;width:100%}
+.values article:hover .value-image img{transform:scale(1.025)}
+@media(max-width:700px){.making-copy li{padding:22px}.testing-steps article:before{margin-bottom:20px}.wordmark-inline{white-space:normal}}
