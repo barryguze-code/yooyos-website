@@ -38,6 +38,19 @@ p{letter-spacing:normal;text-wrap:pretty}
 @media(max-width:1080px){.hero h1{font-size:clamp(3.45rem,9vw,5.75rem)}.section-head{align-items:start}.product-info .eyebrow,.product-info>p:not(.eyebrow){min-height:0}}
 @media(max-width:700px){.hero h1{font-size:clamp(3rem,14vw,4.35rem);letter-spacing:-.03em;line-height:1.08}.story h2,.section-head h2,.comfort-head h2,.making-copy h2,.signature h2,.connect h2{font-size:clamp(2.15rem,10vw,3rem);line-height:1.14}.story-lead{font-size:1.35rem;line-height:1.45}.section-head{gap:2rem}.value-copy{min-height:0}.lead{font-size:1rem;line-height:1.6}}
 
+/* v0.6.0 — consumer clarity: legible eyebrows and footwear-specific benefit icons */
+.eyebrow{font-size:clamp(14px,1vw,16px);letter-spacing:.09em;line-height:1.45}
+.rail{font-size:14px;letter-spacing:.09em}
+.values h3{margin-top:24px}
+.comfort-grid{border-left:1px solid #444;border-top:1px solid #444;display:grid;grid-template-columns:repeat(3,1fr);margin-top:72px}
+.comfort-grid article{border-bottom:1px solid #444;border-right:1px solid #444;min-height:320px;padding:38px}
+.comfort-grid svg{fill:none;height:54px;stroke:var(--sand);stroke-linecap:round;stroke-linejoin:round;stroke-width:1.8;width:54px}
+.comfort-grid h3{font-family:var(--jakarta);font-size:clamp(25px,2vw,32px);letter-spacing:-.025em;line-height:1.2;margin:56px 0 14px}
+.comfort-grid p{color:#c4c4bf;font-size:16px;font-style:normal;line-height:1.6;margin:0;max-width:34ch}
+.testing-steps h3{margin-top:10px}
+@media(max-width:1080px){.comfort-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.comfort-grid{grid-template-columns:1fr;margin-top:52px}.comfort-grid article{min-height:270px;padding:30px}.comfort-grid h3{margin-top:42px}.testing-steps h3{margin-top:0}}
+
 /* v0.5.0 — Product confidence release */
 .prelaunch-note{border-left:3px solid var(--clay);color:var(--muted);font-size:12px;line-height:1.55;margin:28px 0 0;max-width:540px;padding-left:14px}
 .card-fit{color:var(--muted);font-size:11px!important;line-height:1.5!important;margin:14px 0 12px!important;min-height:0!important}
