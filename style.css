@@ -88,3 +88,17 @@ p{letter-spacing:normal;text-wrap:pretty}
 .material-copy dt{font-size:12px;line-height:1.45}
 .material-copy dd{font-size:14px}
 @media(max-width:700px){.inquiry-row{grid-template-columns:1fr}.material-copy dt{font-size:12px}}
+
+/* v0.7.0 — final pre-launch conversion and pacing release */
+.hero .lead{color:#222;font-size:18px;line-height:1.5;max-width:540px}
+.reserve-style{background:transparent;border:0;border-bottom:1px solid var(--ink);color:var(--ink);cursor:pointer;font-size:13px;font-weight:700;margin-top:24px;padding:0 0 5px;text-align:left}
+.style-selection{color:var(--clay)!important;font-size:13px!important;font-weight:700;margin:22px 0 -12px!important;min-height:20px}
+.detail-grid{display:grid;gap:2px;grid-template-columns:repeat(3,1fr);padding:0}
+.detail-grid figure{margin:0;min-width:0;overflow:hidden;position:relative}
+.detail-grid figure img{height:100%;object-fit:cover;position:absolute;width:300%}
+.detail-grid figure:nth-child(1) img{left:0}
+.detail-grid figure:nth-child(2) img{left:-100%}
+.detail-grid figure:nth-child(3) img{left:-200%}
+.detail-grid figcaption{background:linear-gradient(transparent,rgba(0,0,0,.75));bottom:0;color:white;font-size:11px;font-weight:700;left:0;letter-spacing:.08em;padding:64px 18px 18px;position:absolute;right:0}
+.legal span{float:right}
+@media(max-width:700px){.hero .lead{font-size:16px}.detail-grid{grid-template-columns:1fr;grid-template-rows:repeat(3,220px)}.detail-grid figure img{height:100%;top:0;width:300%}.detail-grid figure:nth-child(1) img{left:0}.detail-grid figure:nth-child(2) img{left:-100%}.detail-grid figure:nth-child(3) img{left:-200%}.legal span{display:block;float:none;margin-top:8px}}
