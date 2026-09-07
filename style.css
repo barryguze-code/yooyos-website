@@ -50,6 +50,8 @@ p{letter-spacing:normal;text-wrap:pretty}
 .testing-steps h3{margin-top:10px}
 @media(max-width:1080px){.comfort-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.comfort-grid{grid-template-columns:1fr;margin-top:52px}.comfort-grid article{min-height:270px;padding:30px}.comfort-grid h3{margin-top:42px}.testing-steps h3{margin-top:0}}
+.mobile-launch-form{display:none}
+@media(max-width:700px){.comfort-grid{grid-template-columns:repeat(2,1fr)}.comfort-grid article{min-height:250px;padding:22px}.comfort-grid svg{height:44px;width:44px}.comfort-grid h3{font-size:20px;margin-top:30px}.comfort-grid p{font-size:14px}.card-swatches span{height:44px;width:44px}.mobile-launch-cta{display:none}.mobile-launch-form{align-items:center;background:#111;bottom:0;display:flex;gap:8px;left:0;padding:12px;position:fixed;right:0;z-index:70}.mobile-launch-form input{background:white;border:0;border-radius:99px;flex:1;min-width:0;padding:13px 15px}.mobile-launch-form button{background:var(--clay);border:0;border-radius:99px;color:white;font-size:13px;font-weight:700;padding:13px 15px;white-space:nowrap}footer{padding-bottom:100px}}
 
 /* v0.5.0 — Product confidence release */
 .prelaunch-note{border-left:3px solid var(--clay);color:var(--muted);font-size:12px;line-height:1.55;margin:28px 0 0;max-width:540px;padding-left:14px}
