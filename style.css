@@ -81,3 +81,10 @@ p{letter-spacing:normal;text-wrap:pretty}
 .mobile-launch-cta{display:none}
 @media(max-width:1080px){.material-study{grid-template-columns:1fr}.material-visual{min-height:620px}}
 @media(max-width:700px){.prelaunch-note{margin-top:24px}.material-visual{min-height:390px}.material-copy{padding:72px 24px}.material-copy h2,.testing h2{font-size:clamp(2.15rem,10vw,3rem);line-height:1.14}.testing-steps{grid-template-columns:1fr;margin-top:44px}.testing-steps article,.testing-steps article+article{border-bottom:1px solid var(--line);border-left:0;padding:24px 0}.testing-steps h3{margin-top:20px}.mobile-launch-cta{background:var(--ink);border:1px solid #ffffff35;border-radius:999px;bottom:16px;color:white;display:block;font-size:13px;font-weight:700;left:20px;padding:15px 22px;position:fixed;right:20px;text-align:center;z-index:70}footer{padding-bottom:100px}}
+
+/* Gemini review 2 — clearer pre-launch product language and a dedicated buyer pathway */
+.buyer-link{background:transparent;border:0;border-bottom:1px solid var(--ink);color:var(--ink);cursor:pointer;font-size:13px;font-weight:650;margin-top:28px;padding:0 0 5px;text-align:left}
+.inquiry-row{display:grid;gap:18px;grid-template-columns:1fr 1fr}
+.material-copy dt{font-size:12px;line-height:1.45}
+.material-copy dd{font-size:14px}
+@media(max-width:700px){.inquiry-row{grid-template-columns:1fr}.material-copy dt{font-size:12px}}
