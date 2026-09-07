@@ -17,3 +17,23 @@
 .story .values h3{margin:30px 0 10px}
 @media(max-width:1080px){.story{gap:0;grid-template-columns:1fr}.story .rail{display:none}}
 @media(max-width:700px){.story .values{gap:18px}.story .values article,.story .values article+article{border:0;padding:0}.value-copy{padding:22px 20px 26px}.story .values h3{margin-top:24px}}
+
+/* Production typography system — safe line boxes and responsive rhythm */
+body{font-size:16px;line-height:1.6;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--jakarta);font-optical-sizing:auto;overflow-wrap:break-word;text-wrap:balance}
+p{letter-spacing:normal;text-wrap:pretty}
+.hero h1{font-size:clamp(3.35rem,6.65vw,6.75rem);font-weight:700;letter-spacing:-.035em;line-height:1.05}
+.story h2,.section-head h2,.comfort-head h2,.making-copy h2,.signature h2,.connect h2,.drawer h2,.inquiry h2{font-size:clamp(2.65rem,5vw,4.7rem);letter-spacing:-.025em;line-height:1.12}
+.story-lead{font-size:clamp(1.45rem,2.55vw,2.45rem);letter-spacing:-.012em;line-height:1.35;margin:clamp(2.5rem,5vw,4.25rem) 0}
+.product-info h3{font-size:clamp(1.5rem,2vw,1.875rem);letter-spacing:-.02em;line-height:1.22}
+.values h3,.making-copy h3,.signature h3,.signup h3{letter-spacing:-.018em;line-height:1.25}
+.lead,.section-head>p,.comfort-head>p:last-child,.making-copy>p:not(.eyebrow),.signature>div:last-child>p:not(.eyebrow),.connect>div:first-child>p:not(.eyebrow),.signup>p:not(.eyebrow,.success),.drawer>div>p:not(.eyebrow),.inquiry>p:not(.eyebrow){line-height:1.6}
+.eyebrow,.product-info .eyebrow{line-height:1.4}
+.section-head{align-items:start}
+.product-info .eyebrow{min-height:2.8em;margin-bottom:12px}
+.product-info>p:not(.eyebrow){line-height:1.6;min-height:4.8em}
+.value-copy{display:flex;flex-direction:column;min-height:178px}
+.story .values h3{margin:1.5rem 0 .65rem}
+.story .values p{line-height:1.6}
+@media(max-width:1080px){.hero h1{font-size:clamp(3.45rem,9vw,5.75rem)}.section-head{align-items:start}.product-info .eyebrow,.product-info>p:not(.eyebrow){min-height:0}}
+@media(max-width:700px){.hero h1{font-size:clamp(3rem,14vw,4.35rem);letter-spacing:-.03em;line-height:1.08}.story h2,.section-head h2,.comfort-head h2,.making-copy h2,.signature h2,.connect h2{font-size:clamp(2.15rem,10vw,3rem);line-height:1.14}.story-lead{font-size:1.35rem;line-height:1.45}.section-head{gap:2rem}.value-copy{min-height:0}.lead{font-size:1rem;line-height:1.6}}
